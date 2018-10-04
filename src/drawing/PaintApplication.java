@@ -24,6 +24,7 @@ public class PaintApplication extends Application {
     private Button clearButton;
     private Button rectangleButton;
     private Button circleButton;
+    private Button triangleButton;
 
     @Override
     public void start(Stage primaryStage) throws Exception {
@@ -44,7 +45,9 @@ public class PaintApplication extends Application {
         rectangleButton.addEventFilter(ActionEvent.ACTION, new RectangleButtonHandler(drawingPane));
         circleButton = new Button("Circle");
         circleButton.addEventFilter(ActionEvent.ACTION, new EllipseButtonHandler(drawingPane));
-        hBox.getChildren().addAll(clearButton, rectangleButton, circleButton);
+        triangleButton = new Button("Triangle");
+        triangleButton.addEventFilter(ActionEvent.ACTION, new TriangleButtonHandler(drawingPane));
+        hBox.getChildren().addAll(clearButton, rectangleButton, circleButton, triangleButton);
         hBox.setPadding(new Insets(5));
         hBox.setSpacing(5.0);
         hBox.getStyleClass().add("toolbar");

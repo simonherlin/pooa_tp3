@@ -65,11 +65,23 @@ public class PaintTest extends ApplicationTest {
     }
 
     @Test
+    public void should_draw_triangle() {
+        clickOn("Triangle");
+        moveBy(120,60);
+        drag().dropBy(90,40);
+        Iterator it = app.getDrawingPane().getShapes().iterator();
+        assertTrue(it.next() instanceof Rectangle);
+        assertFalse(it.hasNext());
+    }
+
+    @Test
     public void should_clear() {
         // given:
         clickOn("Rectangle");
         moveBy(30,60).drag().dropBy(70,40);
         clickOn("Circle");
+        moveBy(-30,160).drag().dropBy(70,40);
+        clickOn("Triangle");
         moveBy(-30,160).drag().dropBy(70,40);
 
         // when:

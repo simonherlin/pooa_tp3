@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2f206bc9-cfe1-4d1d-b8a8-c6d51ca7b03e" name="Default Changelist" comment="" />
+    <list default="true" id="2f206bc9-cfe1-4d1d-b8a8-c6d51ca7b03e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/drawing/TriangleButtonHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/drawing/Paint.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/drawing/Paint.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/drawing/PaintApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/drawing/PaintApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/PaintTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/PaintTest.java" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -22,13 +29,27 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="JAVA/PaintTest" value="2" />
-          <entry key="java" value="2" />
+          <entry key="css" value="1" />
+          <entry key="java" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="2" />
+          <entry key="CSS" value="1" />
+          <entry key="JAVA" value="6" />
           <entry key="UML" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="css" value="99" />
+          <entry key="java" value="312" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="CSS" value="99" />
+          <entry key="JAVA" value="312" />
         </counts>
       </usages-collector>
     </session>
@@ -38,8 +59,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/PaintTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="13" column="25" lean-forward="true" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="25" />
+            <state relative-caret-position="58">
+              <caret line="54" column="14" selection-start-line="54" selection-start-column="14" selection-end-line="54" selection-end-column="14" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -47,64 +68,62 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="uml://JAVA/PaintTest">
-          <provider selected="true" editor-type-id="UmlEditorProvider">
-            <state>
-              <ID>JAVA</ID>
-              <OriginalElement>PaintTest</OriginalElement>
-              <nodes>
-                <node x="87.25" y="8799.0">PaintTest</node>
-                <node x="0.0" y="6590.0">org.testfx.framework.junit.ApplicationFixture</node>
-                <node x="60.25" y="8557.0">org.testfx.framework.junit.ApplicationTest</node>
-                <node x="168.0" y="0.0">org.testfx.api.FxRobotInterface</node>
-                <node x="196.0" y="4772.0">org.testfx.api.FxRobot</node>
-              </nodes>
-              <notes />
-              <edges>
-                <edge source="PaintTest" target="org.testfx.framework.junit.ApplicationTest">
-                  <point x="0.0" y="-84.5" />
-                  <point x="0.0" y="96.0" />
-                </edge>
-                <edge source="org.testfx.framework.junit.ApplicationTest" target="org.testfx.api.FxRobot">
-                  <point x="100.0" y="-96.0" />
-                  <point x="360.25" y="8532.0" />
-                  <point x="432.5" y="8532.0" />
-                  <point x="0.0" y="1867.5" />
-                </edge>
-                <edge source="org.testfx.api.FxRobot" target="org.testfx.api.FxRobotInterface">
-                  <point x="0.0" y="-1867.5" />
-                  <point x="0.0" y="2361.0" />
-                </edge>
-                <edge source="org.testfx.framework.junit.ApplicationTest" target="org.testfx.framework.junit.ApplicationFixture">
-                  <point x="-100.0" y="-96.0" />
-                  <point x="160.25" y="8532.0" />
-                  <point x="88.0" y="8532.0" />
-                  <point x="0.0" y="49.5" />
-                </edge>
-              </edges>
-              <settings layout="Hierarchic Group" zoom="1.0" x="154.0" y="135.0" />
-              <SelectedNodes>
-                <node>PaintTest</node>
-              </SelectedNodes>
-              <Categories>
-                <Category>Fields</Category>
-                <Category>Constructors</Category>
-                <Category>Methods</Category>
-                <Category>Properties</Category>
-                <Category>Inner Classes</Category>
-              </Categories>
-              <SCOPE>All</SCOPE>
-              <VISIBILITY>private</VISIBILITY>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/drawing/RectangleButtonHandler.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="268">
+              <caret line="20" column="44" lean-forward="true" selection-start-line="20" selection-start-column="44" selection-end-line="20" selection-end-column="63" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/drawing/TriangleButtonHandler.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="195">
+              <caret line="15" column="41" lean-forward="true" selection-start-line="15" selection-start-column="41" selection-end-line="15" selection-end-column="41" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/drawing/DrawingPane.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-120">
+              <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/drawing/Paint.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="19" column="20" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/drawing/CSSFactory.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="45">
+              <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/drawing/PaintApplication.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="15" selection-start-line="15" selection-end-line="15" />
+            <state relative-caret-position="208">
+              <caret line="47" column="38" selection-start-line="47" selection-start-column="38" selection-end-line="47" selection-end-column="38" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -113,6 +132,26 @@
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/drawing/TriangleButtonHandler.java" />
+        <option value="$PROJECT_DIR$/src/drawing/Paint.css" />
+        <option value="$PROJECT_DIR$/test/PaintTest.java" />
+        <option value="$PROJECT_DIR$/src/drawing/PaintApplication.java" />
+      </list>
+    </option>
   </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
@@ -126,6 +165,7 @@
     <option name="width" value="1346" />
     <option name="height" value="697" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -166,7 +206,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1538655679468" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1538659117785" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/lib/testfx-junit-4.0.14-alpha.jar!/" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -187,7 +227,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.PaintTest">
+  <component name="RunManager" selected="JUnit.PaintTest.should_draw_rectangle">
     <configuration name="PaintApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="drawing.PaintApplication" />
       <module name="Drawing JavaFx" />
@@ -209,12 +249,48 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="PaintTest.should_clear" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Drawing JavaFx" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="PaintTest" />
+      <option name="METHOD_NAME" value="should_clear" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PaintTest.should_draw_rectangle" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Drawing JavaFx" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="PaintTest" />
+      <option name="METHOD_NAME" value="should_draw_rectangle" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PaintTest.should_draw_triangle" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Drawing JavaFx" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="PaintTest" />
+      <option name="METHOD_NAME" value="should_draw_triangle" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="JUnit.PaintTest" />
       <item itemvalue="Application.PaintApplication" />
+      <item itemvalue="JUnit.PaintTest.should_clear" />
+      <item itemvalue="JUnit.PaintTest.should_draw_triangle" />
+      <item itemvalue="JUnit.PaintTest.should_draw_rectangle" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.PaintTest.should_draw_rectangle" />
+        <item itemvalue="JUnit.PaintTest.should_draw_triangle" />
+        <item itemvalue="JUnit.PaintTest.should_clear" />
         <item itemvalue="JUnit.PaintTest" />
         <item itemvalue="Application.PaintApplication" />
       </list>
@@ -231,20 +307,44 @@
       <option name="presentableId" value="Default" />
       <updated>1538652911700</updated>
       <workItem from="1538652913375" duration="1747000" />
-      <workItem from="1538654689105" duration="903000" />
+      <workItem from="1538654689105" duration="3296000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="PaintTest - 2018.10.04 at 14h 09m 54s.xml">
+    <history-entry file="PaintTest - 2018.10.04 at 14h 54m 53s.xml">
       <configuration name="PaintTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PaintTest - 2018.10.04 at 14h 10m 29s.xml">
+    <history-entry file="PaintTest - 2018.10.04 at 15h 00m 12s.xml">
       <configuration name="PaintTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="PaintTest - 2018.10.04 at 15h 00m 23s.xml">
+      <configuration name="PaintTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="PaintTest - 2018.10.04 at 15h 00m 33s.xml">
+      <configuration name="PaintTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="PaintTest - 2018.10.04 at 15h 05m 11s.xml">
+      <configuration name="PaintTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="PaintTest - 2018.10.04 at 15h 06m 01s.xml">
+      <configuration name="PaintTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="PaintTest - 2018.10.04 at 15h 06m 23s.xml">
+      <configuration name="PaintTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="PaintTest_should_clear - 2018.10.04 at 15h 06m 55s.xml">
+      <configuration name="PaintTest.should_clear" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="PaintTest_should_clear - 2018.10.04 at 15h 07m 22s.xml">
+      <configuration name="PaintTest.should_clear" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="PaintTest_should_draw_triangle - 2018.10.04 at 15h 17m 13s.xml">
+      <configuration name="PaintTest.should_draw_triangle" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2650000" />
+    <option name="totallyTimeSpent" value="5043000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1" y="41" width="1364" height="726" extended-state="6" />
@@ -259,7 +359,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32911393" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3296355" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -287,65 +387,22 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/drawing/PaintApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/PaintTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="25" lean-forward="true" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="uml://JAVA/PaintTest">
       <provider selected="true" editor-type-id="UmlEditorProvider">
         <state>
           <ID>JAVA</ID>
           <OriginalElement>PaintTest</OriginalElement>
           <nodes>
-            <node x="87.25" y="8799.0">PaintTest</node>
-            <node x="0.0" y="6590.0">org.testfx.framework.junit.ApplicationFixture</node>
-            <node x="60.25" y="8557.0">org.testfx.framework.junit.ApplicationTest</node>
-            <node x="168.0" y="0.0">org.testfx.api.FxRobotInterface</node>
-            <node x="196.0" y="4772.0">org.testfx.api.FxRobot</node>
+            <node x="" y="">PaintTest</node>
+            <node x="" y="">org.testfx.framework.junit.ApplicationFixture</node>
+            <node x="" y="">org.testfx.framework.junit.ApplicationTest</node>
+            <node x="" y="">org.testfx.api.FxRobotInterface</node>
+            <node x="" y="">org.testfx.api.FxRobot</node>
           </nodes>
           <notes />
-          <edges>
-            <edge source="PaintTest" target="org.testfx.framework.junit.ApplicationTest">
-              <point x="0.0" y="-84.5" />
-              <point x="0.0" y="96.0" />
-            </edge>
-            <edge source="org.testfx.framework.junit.ApplicationTest" target="org.testfx.api.FxRobot">
-              <point x="100.0" y="-96.0" />
-              <point x="360.25" y="8532.0" />
-              <point x="432.5" y="8532.0" />
-              <point x="0.0" y="1867.5" />
-            </edge>
-            <edge source="org.testfx.api.FxRobot" target="org.testfx.api.FxRobotInterface">
-              <point x="0.0" y="-1867.5" />
-              <point x="0.0" y="2361.0" />
-            </edge>
-            <edge source="org.testfx.framework.junit.ApplicationTest" target="org.testfx.framework.junit.ApplicationFixture">
-              <point x="-100.0" y="-96.0" />
-              <point x="160.25" y="8532.0" />
-              <point x="88.0" y="8532.0" />
-              <point x="0.0" y="49.5" />
-            </edge>
-          </edges>
+          <edges />
           <settings layout="Hierarchic Group" zoom="1.0" x="154.0" y="135.0" />
-          <SelectedNodes>
-            <node>PaintTest</node>
-          </SelectedNodes>
+          <SelectedNodes />
           <Categories>
             <Category>Fields</Category>
             <Category>Constructors</Category>
@@ -355,6 +412,67 @@
           </Categories>
           <SCOPE>All</SCOPE>
           <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/drawing/RectangleButtonHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="268">
+          <caret line="20" column="44" lean-forward="true" selection-start-line="20" selection-start-column="44" selection-end-line="20" selection-end-column="63" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/drawing/TriangleButtonHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="15" column="41" lean-forward="true" selection-start-line="15" selection-start-column="41" selection-end-line="15" selection-end-column="41" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/drawing/Paint.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="19" column="20" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/drawing/CSSFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/drawing/DrawingPane.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-120">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/PaintTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="58">
+          <caret line="54" column="14" selection-start-line="54" selection-start-column="14" selection-end-line="54" selection-end-column="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/drawing/PaintApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="47" column="38" selection-start-line="47" selection-start-column="38" selection-end-line="47" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

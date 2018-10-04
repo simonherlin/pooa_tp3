@@ -15,6 +15,12 @@
     -fx-stroke-width: 3;
 }
 
+.triangle {
+    -fx-fill: yellow;
+    -fx-stroke: red;
+    -fx-stroke-width: 3;
+}
+
 .ellipse {
     -fx-fill: yellow;
     -fx-stroke: orange;
