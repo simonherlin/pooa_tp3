@@ -91,4 +91,28 @@ public class PaintTest extends ApplicationTest {
         assertFalse(app.getDrawingPane().iterator().hasNext());
     }
 
+    @Test
+    public void sould_good_number1() {
+        clickOn("Rectangle");
+        moveBy(30,60).drag().dropBy(70,40);
+        clickOn("Circle");
+        moveBy(-30,160).drag().dropBy(70,40);
+        clickOn("Triangle");
+        moveBy(-30,160).drag().dropBy(70,40);
+
+        assertTrue(app.getDrawingPane().getNumberShape() == 3);
+    }
+
+    @Test
+    public void sould_good_number2() {
+        clickOn("Rectangle");
+        moveBy(30,60).drag().dropBy(70,40);
+        clickOn("Circle");
+        moveBy(-30,160).drag().dropBy(70,40);
+        clickOn("Triangle");
+        moveBy(-30,160).drag().dropBy(70,40);
+        clickOn("Clear");
+        assertTrue(app.getDrawingPane().getNumberShape() == 0);
+    }
+
 }
