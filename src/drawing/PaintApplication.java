@@ -41,7 +41,8 @@ public class PaintApplication extends Application {
 
         HBox hBox = new HBox();
         clearButton = new Button("Clear");
-        clearButton.setOnAction(event -> drawingPane.clear());
+        // clearButton.setOnAction(event -> drawingPane.clear());
+        clearButton.addEventFilter(ActionEvent.ACTION, new ClearButtonHandler(drawingPane));
         rectangleButton = new Button("Rectangle");
         rectangleButton.addEventFilter(ActionEvent.ACTION, new RectangleButtonHandler(drawingPane));
         circleButton = new Button("Circle");

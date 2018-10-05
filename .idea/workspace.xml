@@ -2,16 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2f206bc9-cfe1-4d1d-b8a8-c6d51ca7b03e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/drawing/Observable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/drawing/Observer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/drawing/StatutBar.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/drawing/ClearButtonHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Drawing JavaFx/drawing/MouseMoveHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Drawing JavaFx/drawing/MouseMoveHandler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Drawing JavaFx/drawing/Paint.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Drawing JavaFx/drawing/Paint.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Drawing JavaFx/drawing/PaintApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Drawing JavaFx/drawing/PaintApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/drawing/DrawingPane.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/drawing/DrawingPane.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/drawing/MouseMoveHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/drawing/MouseMoveHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/drawing/Paint.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/drawing/Paint.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/drawing/PaintApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/drawing/PaintApplication.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -36,44 +28,32 @@
         <counts>
           <entry key="JAVA/PaintTest" value="2" />
           <entry key="css" value="2" />
-          <entry key="java" value="10" />
+          <entry key="java" value="12" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CSS" value="2" />
-          <entry key="JAVA" value="10" />
+          <entry key="JAVA" value="12" />
           <entry key="UML" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="css" value="108" />
-          <entry key="java" value="1290" />
+          <entry key="java" value="1300" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="108" />
-          <entry key="JAVA" value="1290" />
+          <entry key="JAVA" value="1300" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/PaintTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="149">
-              <caret line="30" column="53" selection-start-line="30" selection-start-column="53" selection-end-line="30" selection-end-column="53" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/drawing/RectangleButtonHandler.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -89,7 +69,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/drawing/DrawingPane.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="109">
+            <state relative-caret-position="403">
               <caret line="76" column="26" lean-forward="true" selection-start-line="76" selection-start-column="26" selection-end-line="76" selection-end-column="26" />
               <folding>
                 <element signature="e#1559#1560#0" expanded="true" />
@@ -123,11 +103,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/drawing/StatutBar.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="17" column="68" selection-start-line="17" selection-start-column="68" selection-end-line="17" selection-end-column="68" />
+            <state relative-caret-position="120">
+              <caret line="8" column="27" lean-forward="true" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#513#514#0" expanded="true" />
@@ -138,19 +118,35 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/drawing/CSSFactory.java">
+        <entry file="file://$PROJECT_DIR$/src/drawing/ClearButtonHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+            <state relative-caret-position="285">
+              <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#240#241#0" expanded="true" />
+                <element signature="e#266#267#0" expanded="true" />
+                <element signature="e#328#329#0" expanded="true" />
+                <element signature="e#357#358#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/drawing/ShapeButtonHandler.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="11" column="22" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/drawing/PaintApplication.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="148">
-              <caret line="58" column="43" lean-forward="true" selection-start-line="58" selection-start-column="43" selection-end-line="58" selection-end-column="43" />
+            <state relative-caret-position="118">
+              <caret line="44" column="92" selection-start-line="44" selection-start-column="92" selection-end-line="44" selection-end-column="92" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -181,8 +177,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -198,9 +194,10 @@
         <option value="$PROJECT_DIR$/src/drawing/Paint.css" />
         <option value="$PROJECT_DIR$/src/drawing/Observer.java" />
         <option value="$PROJECT_DIR$/src/drawing/Observable.java" />
-        <option value="$PROJECT_DIR$/src/drawing/PaintApplication.java" />
         <option value="$PROJECT_DIR$/src/drawing/DrawingPane.java" />
         <option value="$PROJECT_DIR$/src/drawing/StatutBar.java" />
+        <option value="$PROJECT_DIR$/src/drawing/ClearButtonHandler.java" />
+        <option value="$PROJECT_DIR$/src/drawing/PaintApplication.java" />
       </list>
     </option>
   </component>
@@ -257,7 +254,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1538747558696" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1538750281756" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/lib/testfx-junit-4.0.14-alpha.jar!/" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -360,7 +357,7 @@
       <workItem from="1538652913375" duration="1747000" />
       <workItem from="1538654689105" duration="5924000" />
       <workItem from="1538676389212" duration="975000" />
-      <workItem from="1538739071513" duration="7326000" />
+      <workItem from="1538739071513" duration="8700000" />
     </task>
     <servers />
   </component>
@@ -397,13 +394,13 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15972000" />
+    <option name="totallyTimeSpent" value="17346000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1" y="41" width="1364" height="726" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26096824" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26096824" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -412,8 +409,8 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3296355" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.39936608" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3296355" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39936608" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -545,19 +542,42 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/drawing/PaintApplication.java">
+    <entry file="file://$PROJECT_DIR$/src/drawing/StatutBar.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="148">
-          <caret line="58" column="43" lean-forward="true" selection-start-line="58" selection-start-column="43" selection-end-line="58" selection-end-column="43" />
+        <state relative-caret-position="120">
+          <caret line="8" column="27" lean-forward="true" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#513#514#0" expanded="true" />
+            <element signature="e#556#557#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/drawing/ShapeButtonHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="11" column="22" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/drawing/ClearButtonHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#240#241#0" expanded="true" />
+            <element signature="e#266#267#0" expanded="true" />
+            <element signature="e#328#329#0" expanded="true" />
+            <element signature="e#357#358#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/drawing/DrawingPane.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="109">
+        <state relative-caret-position="403">
           <caret line="76" column="26" lean-forward="true" selection-start-line="76" selection-start-column="26" selection-end-line="76" selection-end-column="26" />
           <folding>
             <element signature="e#1559#1560#0" expanded="true" />
@@ -572,14 +592,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/drawing/StatutBar.java">
+    <entry file="file://$PROJECT_DIR$/src/drawing/PaintApplication.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="17" column="68" selection-start-line="17" selection-start-column="68" selection-end-line="17" selection-end-column="68" />
+        <state relative-caret-position="118">
+          <caret line="44" column="92" selection-start-line="44" selection-start-column="92" selection-end-line="44" selection-end-column="92" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#513#514#0" expanded="true" />
-            <element signature="e#556#557#0" expanded="true" />
           </folding>
         </state>
       </provider>
