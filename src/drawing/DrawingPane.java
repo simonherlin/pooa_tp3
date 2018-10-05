@@ -6,16 +6,21 @@ import javafx.scene.shape.Rectangle;
 import javafx.scene.shape.Shape;
 
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.Iterator;
 
 /**
  * Created by lewandowski on 20/12/2017.
  */
-public class DrawingPane extends Pane implements Iterable<Shape>{
+public class DrawingPane extends Pane implements Iterable<Shape>, Observable{
 
     private MouseMoveHandler mouseMoveHandler;
-
     private ArrayList<Shape> shapes;
+    private int numberShape;
+    private Collection<Observer> observers = new ArrayList<>();
+    private
+    int
+            state = 0;
 
     public DrawingPane() {
         clipChildren();
@@ -42,6 +47,8 @@ public class DrawingPane extends Pane implements Iterable<Shape>{
     public void addShape(Shape shape) {
         shapes.add(shape);
         this.getChildren().add(shape);
+        this.numberShape++;
+        this.notifyObservers();
     }
 
     public Iterator<Shape> iterator() {
@@ -51,5 +58,29 @@ public class DrawingPane extends Pane implements Iterable<Shape>{
     public void clear() {
         this.getChildren().removeAll(shapes);
         shapes.clear();
+        this.numberShape = 0;
+        this.notifyObservers();
+    }
+
+    public int getNumberShape() {
+        return this.numberShape;
+    }
+
+    public void addObserver (Observer o) {
+        observers.add (o);
+    }
+    public void removeObserver (Observer o) {
+        observers.remove (o);
+    }
+    public void notifyObservers (){
+        for(Observer obs : observers)
+            obs.update ();
+    }
+    public int getState () {
+        return this.state;
+    }
+    public void setState (int state) {
+        this.state = state;
+        notifyObservers ();
     }
 }

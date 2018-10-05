@@ -20,6 +20,7 @@ public class PaintApplication extends Application {
     private Scene scene;
     private BorderPane root;
     private DrawingPane drawingPane;
+    private StatutBar statutBar;
 
     private Button clearButton;
     private Button rectangleButton;
@@ -52,6 +53,13 @@ public class PaintApplication extends Application {
         hBox.setSpacing(5.0);
         hBox.getStyleClass().add("toolbar");
         root.setTop(hBox);
+
+
+        this.statutBar = new StatutBar(drawingPane);
+        drawingPane.addObserver(statutBar);
+        this.statutBar.setPadding(new Insets(7));
+        this.statutBar.getStyleClass().add("statutbar");
+        root.setBottom(statutBar);
 
         primaryStage.setTitle("Drawing");
         primaryStage.setScene(scene);
