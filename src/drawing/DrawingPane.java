@@ -6,11 +6,12 @@ import javafx.scene.shape.Rectangle;
 import javafx.scene.shape.Shape;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 
 /**
  * Created by lewandowski on 20/12/2017.
  */
-public class DrawingPane extends Pane {
+public class DrawingPane extends Pane implements Iterable<Shape>{
 
     private MouseMoveHandler mouseMoveHandler;
 
@@ -43,8 +44,8 @@ public class DrawingPane extends Pane {
         this.getChildren().add(shape);
     }
 
-    public ArrayList<Shape> getShapes() {
-        return shapes;
+    public Iterator<Shape> iterator() {
+        return shapes.iterator();
     }
 
     public void clear() {

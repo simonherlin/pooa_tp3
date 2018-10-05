@@ -4,6 +4,8 @@ import javafx.event.EventHandler;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.shape.Shape;
 
+import java.util.List;
+
 /**
  * Created by lewandowski on 20/12/2017.
  */
@@ -33,7 +35,7 @@ public class MouseMoveHandler implements EventHandler<MouseEvent> {
             orgSceneY = event.getSceneY();
 
 
-            for (Shape shape : drawingPane.getShapes()) {
+            for (Shape shape : (List<Shape>)drawingPane.iterator()) {
                 if (shape.getBoundsInParent().contains(event.getX(), event.getY())) {
                     selectedShape = shape;
                     break;
