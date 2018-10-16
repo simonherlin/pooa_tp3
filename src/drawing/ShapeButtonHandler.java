@@ -17,7 +17,7 @@ public abstract class ShapeButtonHandler implements EventHandler<Event> {
     protected double destinationX;
     protected double destinationY;
 
-    protected Shape shape;
+    protected IShape shape;
 
     public ShapeButtonHandler(DrawingPane drawingPane) {
         this.drawingPane = drawingPane;
@@ -49,6 +49,6 @@ public abstract class ShapeButtonHandler implements EventHandler<Event> {
         }
     }
 
-    protected abstract Shape createShape();
+    protected abstract IShape createShape();
 
 }

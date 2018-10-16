@@ -1,5 +1,7 @@
 import drawing.PaintApplication;
+import drawing.ShapeAdapter;
 import javafx.scene.shape.Ellipse;
+import javafx.scene.shape.Polygon;
 import javafx.scene.shape.Rectangle;
 import javafx.stage.Stage;
 import org.junit.Test;
@@ -26,7 +28,7 @@ public class PaintTest extends ApplicationTest {
     @Test
     public void should_draw_circle_programmatically() {
         interact(() -> {
-                    app.getDrawingPane().addShape(new Ellipse(20, 20, 30, 30));
+                    app.getDrawingPane().addShape(new ShapeAdapter(new Ellipse(20, 20, 30, 30)));
                 });
         Iterator it = app.getDrawingPane().iterator();
         assertTrue(it.next() instanceof Ellipse);
@@ -70,7 +72,7 @@ public class PaintTest extends ApplicationTest {
         moveBy(120,60);
         drag().dropBy(90,40);
         Iterator it = app.getDrawingPane().iterator();
-        assertTrue(it.next() instanceof Rectangle);
+        assertTrue(it.next() instanceof Polygon);
         assertFalse(it.hasNext());
     }
 

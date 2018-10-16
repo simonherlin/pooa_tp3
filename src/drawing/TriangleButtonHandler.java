@@ -8,7 +8,7 @@ public class TriangleButtonHandler extends ShapeButtonHandler {
         super(drawingPane);
     }
     @Override
-    protected Shape createShape() {
+    protected IShape createShape() {
         double x = Math.min(originX, destinationX);
         double y = Math.min(originY, destinationY);
         double width = Math.abs(destinationX - originX);
@@ -21,6 +21,6 @@ public class TriangleButtonHandler extends ShapeButtonHandler {
                 });
 
         triangle.getStyleClass().add("triangle");
-        return triangle;
+        return new ShapeAdapter(triangle);
     }
 }
