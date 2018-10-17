@@ -8,6 +8,7 @@ import javafx.scene.shape.Shape;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Iterator;
+import java.util.List;
 
 /**
  * Created by lewandowski on 20/12/2017.
@@ -15,6 +16,7 @@ import java.util.Iterator;
 public class DrawingPane extends Pane implements Iterable<IShape>, Observable{
 
     private MouseMoveHandler mouseMoveHandler;
+    private SelectHandler selectHandler;
     private ArrayList<IShape> shapes;
     private int numberShape;
     private Collection<Observer> observers = new ArrayList<>();
@@ -24,6 +26,7 @@ public class DrawingPane extends Pane implements Iterable<IShape>, Observable{
         clipChildren();
         shapes = new ArrayList<>();
         mouseMoveHandler = new MouseMoveHandler(this);
+        selectHandler = new SelectHandler(this);
     }
 
 
@@ -40,6 +43,11 @@ public class DrawingPane extends Pane implements Iterable<IShape>, Observable{
             outputClip.setWidth(newValue.getWidth());
             outputClip.setHeight(newValue.getHeight());
         });
+    }
+
+    public List<IShape> getSelection()
+    {
+        return selectHandler.getShapes();
     }
 
     public void addShape(IShape shape) {

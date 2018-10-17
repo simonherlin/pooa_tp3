@@ -4,6 +4,7 @@ import javafx.event.EventHandler;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.shape.Shape;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -18,13 +19,14 @@ public class MouseMoveHandler implements EventHandler<MouseEvent> {
     private double orgTranslateX;
     private double orgTranslateY;
 
-    private IShape selectedShape;
+    private List<IShape> selectedShape;
 
     public MouseMoveHandler(DrawingPane drawingPane) {
         this.drawingPane = drawingPane;
         drawingPane.setOnMousePressed(this);
         drawingPane.setOnMouseDragged(this);
         drawingPane.setOnMouseReleased(this);
+        this.selectedShape = new ArrayList<>();
     }
 
     @Override
@@ -33,53 +35,26 @@ public class MouseMoveHandler implements EventHandler<MouseEvent> {
         if (event.getEventType().equals(MouseEvent.MOUSE_PRESSED)) {
             orgSceneX = event.getSceneX();
             orgSceneY = event.getSceneY();
-
-
-            for (IShape shape : drawingPane) {
-                /*if (shape.getBoundsInParent().contains(event.getX(), event.getY())) {
-                    selectedShape = shape;
-                    break;
-                }*/
-                if (shape.isOn(event.getX(), event.getY())) {
-                    selectedShape = shape;
-                    selectedShape.setSelected(true);
-                    break;
-                }
-            }
-
-            // orgTranslateX = selectedShape == null ? 0 : selectedShape.getTranslateX();
-            // orgTranslateY = selectedShape == null ? 0 : selectedShape.getTranslateY();
+            selectedShape = drawingPane.getSelection();
 
         }
 
         if (event.getEventType().equals(MouseEvent.MOUSE_DRAGGED)) {
-            if (selectedShape == null)
-                return;
+            if (selectedShape.size() > 0) {
 
-            double offsetX = event.getSceneX() - orgSceneX;
-            double offsetY = event.getSceneY() - orgSceneY;
+                double offsetX = event.getSceneX() - orgSceneX;
+                double offsetY = event.getSceneY() - orgSceneY;
 
-            selectedShape.offset(offsetX,offsetY);
+                for(IShape shape : selectedShape)
+                    shape.offset(offsetX, offsetY);
 
-            orgSceneX += offsetX;
-            orgSceneY += offsetY;
-
-            /*
-            double newTranslateX = orgTranslateX + offsetX;
-            double newTranslateY = orgTranslateY + offsetY;
-
-            selectedShape.setTranslateX(newTranslateX);
-            selectedShape.setTranslateY(newTranslateY);
-            */
+                orgSceneX += offsetX;
+                orgSceneY += offsetY;
+            }
         }
 
         if (event.getEventType().equals(MouseEvent.MOUSE_RELEASED)) {
-            if (selectedShape == null)
-                return;
-
-            if (selectedShape.isSelected())
-                selectedShape.setSelected(false);
-            selectedShape = null;
+            selectedShape = new ArrayList<>();
         }
     }
 }
