@@ -1,5 +1,5 @@
-import drawing.PaintApplication;
-import drawing.ShapeAdapter;
+import drawing.ui.PaintApplication;
+import drawing.shapes.ShapeAdapter;
 import javafx.scene.input.KeyCode;
 import javafx.scene.shape.Ellipse;
 import javafx.scene.shape.Polygon;
