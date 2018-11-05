@@ -2,28 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2f206bc9-cfe1-4d1d-b8a8-c6d51ca7b03e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/drawing/ui/FactoryButton.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/drawing/ui/ToolBar.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/drawing/CSSFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/drawing/css/CSSFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/drawing/ClearButtonHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/drawing/handlers/ClearButtonHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/drawing/DeleteButtonHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/drawing/handlers/DeleteButtonHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/drawing/DrawingPane.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/drawing/ui/DrawingPane.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/drawing/EllipseButtonHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/drawing/handlers/EllipseButtonHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/drawing/IShape.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/drawing/shapes/IShape.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/drawing/MouseMoveHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/drawing/handlers/MouseMoveHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/drawing/Observable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/drawing/ui/Observable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/drawing/Observer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/drawing/ui/Observer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/drawing/Paint.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/drawing/css/Paint.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/drawing/PaintApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/drawing/ui/PaintApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/drawing/RectangleButtonHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/drawing/handlers/RectangleButtonHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/drawing/SelectHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/drawing/handlers/SelectHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/drawing/ShapeAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/drawing/shapes/ShapeAdapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/drawing/ShapeButtonHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/drawing/handlers/ShapeButtonHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/drawing/StatutBar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/drawing/ui/StatutBar.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/drawing/TriangleButtonHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/drawing/handlers/TriangleButtonHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/PaintTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/PaintTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/drawing/ui/PaintApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/drawing/ui/PaintApplication.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -126,11 +105,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/drawing/ui/PaintApplication.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="62">
-              <caret line="37" lean-forward="true" selection-start-line="37" selection-end-line="37" />
+            <state relative-caret-position="15">
+              <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -150,11 +129,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/drawing/ui/FactoryButton.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+            <state relative-caret-position="165">
+              <caret line="11" column="85" lean-forward="true" selection-start-line="11" selection-start-column="85" selection-end-line="11" selection-end-column="85" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#747#748#0" expanded="true" />
@@ -275,34 +254,6 @@
               <item name="Drawing JavaFx" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="drawing" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Drawing JavaFx" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Drawing JavaFx" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="drawing" type="462c0819:PsiDirectoryNode" />
-              <item name="handlers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Drawing JavaFx" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Drawing JavaFx" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="drawing" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Drawing JavaFx" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Drawing JavaFx" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="drawing" type="462c0819:PsiDirectoryNode" />
-              <item name="shapes" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Drawing JavaFx" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Drawing JavaFx" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="drawing" type="462c0819:PsiDirectoryNode" />
               <item name="ui" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -322,7 +273,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541428862596" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541431450930" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/lib/testfx-junit-4.0.14-alpha.jar!/" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -437,7 +388,7 @@
       <workItem from="1539774058345" duration="5109000" />
       <workItem from="1541419887292" duration="1299000" />
       <workItem from="1541421470340" duration="4664000" />
-      <workItem from="1541427150916" duration="1712000" />
+      <workItem from="1541427150916" duration="3558000" />
     </task>
     <servers />
   </component>
@@ -474,13 +425,13 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="44487000" />
+    <option name="totallyTimeSpent" value="46333000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1" y="41" width="1364" height="726" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21104388" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21104388" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -489,7 +440,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3296355" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.2947702" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.2947702" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39936608" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -687,6 +638,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/drawing/ui/Observer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/drawing/images/clear.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/drawing/ui/FactoryButton.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="85" lean-forward="true" selection-start-line="11" selection-start-column="85" selection-end-line="11" selection-end-column="85" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#747#748#0" expanded="true" />
+            <element signature="e#775#776#0" expanded="true" />
+            <element signature="e#814#815#0" expanded="true" />
+            <element signature="e#848#849#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/drawing/ui/ToolBar.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
@@ -697,36 +672,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/drawing/ui/Observer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/drawing/ui/PaintApplication.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="62">
-          <caret line="37" lean-forward="true" selection-start-line="37" selection-end-line="37" />
+        <state relative-caret-position="15">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
           <folding>
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/drawing/images/clear.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/drawing/ui/FactoryButton.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#747#748#0" expanded="true" />
-            <element signature="e#775#776#0" expanded="true" />
-            <element signature="e#814#815#0" expanded="true" />
-            <element signature="e#848#849#0" expanded="true" />
           </folding>
         </state>
       </provider>
