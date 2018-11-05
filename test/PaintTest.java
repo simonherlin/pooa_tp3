@@ -1,5 +1,6 @@
 import drawing.PaintApplication;
 import drawing.ShapeAdapter;
+import javafx.scene.input.KeyCode;
 import javafx.scene.shape.Ellipse;
 import javafx.scene.shape.Polygon;
 import javafx.scene.shape.Rectangle;
@@ -117,4 +118,14 @@ public class PaintTest extends ApplicationTest {
         assertTrue(app.getDrawingPane().getNumberShape() == 0);
     }
 
+    @Test
+    public void sould_good_number_selected() {
+        clickOn("Rectangle");
+        moveBy(30,60).drag().dropBy(70,40);
+        clickOn("Circle");
+        moveBy(70,160).drag().dropBy(70,40);
+        clickOn(31,61);
+        press(KeyCode.SHIFT).clickOn(75,163);
+        assertTrue(app.getDrawingPane().getSelectHandler().getShapes().size() == 2);
+    }
 }
