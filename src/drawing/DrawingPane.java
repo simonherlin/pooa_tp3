@@ -92,4 +92,10 @@ public class DrawingPane extends Pane implements Iterable<IShape>, Observable{
         this.state = state;
         notifyObservers ();
     }
+
+    public SelectHandler getSelectHandler()
+    {
+        return selectHandler;
+    }
+
 }
