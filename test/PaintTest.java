@@ -124,8 +124,19 @@ public class PaintTest extends ApplicationTest {
         moveBy(30,60).drag().dropBy(70,40);
         clickOn("Circle");
         moveBy(70,160).drag().dropBy(70,40);
-        clickOn(31,61);
-        press(KeyCode.SHIFT).clickOn(75,163);
+        clickOn(app.getDrawingPane().getChildren().get(0));
+        press(KeyCode.SHIFT).clickOn(app.getDrawingPane().getChildren().get(1));
         assertTrue(app.getDrawingPane().getSelectHandler().getShapes().size() == 2);
+    }
+
+    @Test
+    public void remove_shape_selected() {
+        clickOn("Rectangle");
+        moveBy(30,60).drag().dropBy(70,40);
+        clickOn("Circle");
+        moveBy(70,160).drag().dropBy(70,40);
+        clickOn(app.getDrawingPane().getChildren().get(0));
+        clickOn("Delete");
+        assertTrue(app.getDrawingPane().getNumberShape() == 1);
     }
 }
