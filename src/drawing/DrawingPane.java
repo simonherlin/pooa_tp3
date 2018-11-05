@@ -58,6 +58,14 @@ public class DrawingPane extends Pane implements Iterable<IShape>, Observable{
         this.notifyObservers();
     }
 
+    public void removeShape(IShape shape) {
+        shapes.remove(shape);
+        shape.remove(this);
+        this.selectHandler.removeShape(shape);
+        notifyObservers();
+    }
+
+
     @Override
     public Iterator<IShape> iterator() {
         return shapes.iterator();
@@ -65,10 +73,12 @@ public class DrawingPane extends Pane implements Iterable<IShape>, Observable{
 
     public void clear() {
         for (IShape shap : shapes){
+            this.selectHandler.removeShape(shap);
             shap.removeShapeFromPane(this);
         }
         shapes.clear();
         setState(0);
+        notifyObservers();
     }
 
     public int getNumberShape() {

@@ -8,4 +8,5 @@ public interface IShape {
     void offset(double x, double y);
     void addShapeToPane(Pane pane);
     void removeShapeFromPane(Pane pane);
+    public void remove(DrawingPane drawingPane);
 }
