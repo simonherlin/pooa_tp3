@@ -10,6 +10,8 @@ public class FactoryButton {
     public static final String[] RECTANLGE = new String[] {"Rectangle","rectangle.png"};
     public static final String[] CIRCLE = new String[] {"Circle","circle.png"};
     public static final String[] TRIANGLE = new String[] {"Triangle","triangle.png"};
+    public static final String[] GROUP = new String[] {"Group","group.png"};
+    public static final String[] DEGROUP = new String[] {"Degroup","degroup.png"};
 
     public static final int TEXT_ONLY = 0;
     public static final int ICONS_ONLY = 1;
