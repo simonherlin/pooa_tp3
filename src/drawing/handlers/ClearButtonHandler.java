@@ -1,22 +1,22 @@
 package drawing.handlers;
 
-import drawing.ui.DrawingPane;
+import drawing.commands.ICommand;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 
 public class ClearButtonHandler implements EventHandler<ActionEvent> {
 
-    private DrawingPane dPane;
+    private ICommand command;
 
-    public ClearButtonHandler(DrawingPane dp)
+    public ClearButtonHandler(ICommand command)
     {
-        dPane = dp;
+        this.command = command;
     }
 
     @Override
     public void handle(ActionEvent arg)
     {
-        dPane.clear();
+        command.execute();
     }
 
 }
