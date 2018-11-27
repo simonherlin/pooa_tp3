@@ -1,31 +1,24 @@
 package drawing.handlers;
 
-import java.util.ArrayList;
-import java.util.List;
-
-import drawing.ui.DrawingPane;
-import drawing.shapes.IShape;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
+import drawing.commands.ICommand;
+import drawing.commands.DeleteCommand;
+import drawing.ui.DrawingPane;
 
 public class DeleteButtonHandler implements EventHandler<ActionEvent> {
 
-    private DrawingPane dp;
+    private ICommand command;
+    private DrawingPane pane;
 
-    public DeleteButtonHandler(DrawingPane drawingPane) {
-        this.dp = drawingPane;
+    public DeleteButtonHandler(DrawingPane pane) {
+        this.pane = pane;
     }
 
     @Override
     public void handle(ActionEvent event) {
-        List<IShape> selectedShapes = this.dp.getSelection();
-        List<IShape> shapes = new ArrayList<IShape>();
-        dp.iterator().forEachRemaining(shapes::add);
-        for(IShape shape : shapes)
-        {
-            if(selectedShapes.contains(shape))
-                dp.removeShape(shape);
-        }
+        this.command = new DeleteCommand(this.pane);
+        this.command.execute();
     }
 
 }

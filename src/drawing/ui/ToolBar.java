@@ -12,6 +12,7 @@ import javafx.geometry.Insets;
 import javafx.scene.control.Button;
 import javafx.scene.layout.HBox;
 import drawing.commands.ClearCommand;
+import drawing.commands.DeleteCommand;
 
 public class ToolBar extends HBox {
 
@@ -28,7 +29,7 @@ public class ToolBar extends HBox {
         FactoryButton factory = new FactoryButton();
 
         clearButton = factory.createButton(FactoryButton.CLEAR);
-        clearButton.addEventFilter(ActionEvent.ACTION, new ClearButtonHandler(new ClearCommand(drawingPane)));
+        clearButton.addEventFilter(ActionEvent.ACTION, new ClearButtonHandler(drawingPane));
         rectangleButton = factory.createButton(FactoryButton.RECTANLGE);
         rectangleButton.addEventFilter(ActionEvent.ACTION, new RectangleButtonHandler(drawingPane));
         circleButton = factory.createButton(FactoryButton.CIRCLE);
