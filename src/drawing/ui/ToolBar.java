@@ -1,12 +1,6 @@
 package drawing.ui;
 
-import drawing.handlers.ClearButtonHandler;
-import drawing.handlers.DeleteButtonHandler;
-import drawing.handlers.DegroupButtonHandler;
-import drawing.handlers.GroupButtonHandler;
-import drawing.handlers.EllipseButtonHandler;
-import drawing.handlers.RectangleButtonHandler;
-import drawing.handlers.TriangleButtonHandler;
+import drawing.handlers.*;
 import javafx.event.ActionEvent;
 import javafx.geometry.Insets;
 import javafx.scene.control.Button;
@@ -23,6 +17,8 @@ public class ToolBar extends HBox {
     private Button deleteButton;
     private Button groupButton;
     private Button degroupButton;
+    private Button undoButton;
+    private Button redoButton;
 
     public ToolBar(DrawingPane drawingPane) {
 
@@ -42,8 +38,12 @@ public class ToolBar extends HBox {
         groupButton.addEventFilter(ActionEvent.ACTION, new GroupButtonHandler(drawingPane));
         degroupButton = factory.createButton(FactoryButton.DEGROUP);
         degroupButton.addEventFilter(ActionEvent.ACTION, new DegroupButtonHandler(drawingPane));
+        undoButton = factory.createButton(FactoryButton.UNDO);
+        undoButton.addEventFilter(ActionEvent.ACTION, new UndoButtonHandler(drawingPane));
+        redoButton = factory.createButton(FactoryButton.REDO);
+        redoButton.addEventFilter(ActionEvent.ACTION, new RedoButtonHandler(drawingPane));
 
-        this.getChildren().addAll(clearButton, rectangleButton, circleButton,triangleButton, deleteButton, groupButton, degroupButton);
+        this.getChildren().addAll(clearButton, rectangleButton, circleButton,triangleButton, deleteButton, groupButton, degroupButton, undoButton, redoButton);
         this.setPadding(new Insets(5));
         this.setSpacing(5.0);
         this.getStyleClass().add("toolbar");

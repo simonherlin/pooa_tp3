@@ -20,7 +20,7 @@ public class ClearButtonHandler implements EventHandler<ActionEvent> {
     public void handle(ActionEvent arg0)
     {
         this.command = new ClearCommand(pane);
-        this.command.execute();
+        this.pane.getHistory().exec(command);
     }
 
 }

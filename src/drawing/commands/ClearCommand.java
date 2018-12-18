@@ -2,6 +2,7 @@ package drawing.commands;
 
 import java.util.ArrayList;
 import java.util.List;
+
 import drawing.shapes.IShape;
 import drawing.ui.DrawingPane;
 

@@ -1,12 +1,14 @@
 package drawing.handlers;
 
-import drawing.ui.DrawingPane;
-import drawing.shapes.IShape;
-import javafx.event.EventHandler;
-import javafx.scene.input.MouseEvent;
-
 import java.util.ArrayList;
 import java.util.List;
+
+import drawing.commands.ICommand;
+import drawing.commands.MoveCommand;
+import drawing.shapes.IShape;
+import drawing.ui.DrawingPane;
+import javafx.event.EventHandler;
+import javafx.scene.input.MouseEvent;
 
 /**
  * Created by lewandowski on 20/12/2017.
@@ -17,17 +19,21 @@ public class MouseMoveHandler implements EventHandler<MouseEvent> {
 
     private double orgSceneX;
     private double orgSceneY;
-    private double orgTranslateX;
-    private double orgTranslateY;
+    double offsetX;
+    double offsetY;
+    private double totalOffsetX;
+    private double totalOffsetY;
 
-    private List<IShape> selectedShape;
+    private List<IShape> selectedShapes;
+
+    private ICommand command;
 
     public MouseMoveHandler(DrawingPane drawingPane) {
         this.drawingPane = drawingPane;
         drawingPane.setOnMousePressed(this);
         drawingPane.setOnMouseDragged(this);
         drawingPane.setOnMouseReleased(this);
-        this.selectedShape = new ArrayList<>();
+        selectedShapes = new ArrayList<>();
     }
 
     @Override
@@ -36,26 +42,38 @@ public class MouseMoveHandler implements EventHandler<MouseEvent> {
         if (event.getEventType().equals(MouseEvent.MOUSE_PRESSED)) {
             orgSceneX = event.getSceneX();
             orgSceneY = event.getSceneY();
-            selectedShape = drawingPane.getSelection();
 
+            selectedShapes = drawingPane.getSelection();
+
+            totalOffsetX = 0;
+            totalOffsetY = 0;
         }
 
         if (event.getEventType().equals(MouseEvent.MOUSE_DRAGGED)) {
-            if (selectedShape.size() > 0) {
+            if (selectedShapes.size() == 0)
+                return;
 
-                double offsetX = event.getSceneX() - orgSceneX;
-                double offsetY = event.getSceneY() - orgSceneY;
+            offsetX = event.getSceneX() - orgSceneX;
+            offsetY = event.getSceneY() - orgSceneY;
 
-                for(IShape shape : selectedShape)
-                    shape.offset(offsetX, offsetY);
+            for(IShape shape : selectedShapes)
+                shape.offset(offsetX, offsetY);
 
-                orgSceneX += offsetX;
-                orgSceneY += offsetY;
-            }
+            totalOffsetX += offsetX;
+            totalOffsetY += offsetY;
+
+            orgSceneX += offsetX;
+            orgSceneY += offsetY;
         }
 
         if (event.getEventType().equals(MouseEvent.MOUSE_RELEASED)) {
-            selectedShape = new ArrayList<>();
+            if(totalOffsetX > 0 || totalOffsetY > 0) {
+                command = new MoveCommand(selectedShapes, totalOffsetX, totalOffsetY);
+                for(IShape shape : selectedShapes)
+                    shape.offset(-totalOffsetX, -totalOffsetY);
+                this.drawingPane.getHistory().exec(command);
+            }
+            selectedShapes = new ArrayList<>();
         }
     }
 }

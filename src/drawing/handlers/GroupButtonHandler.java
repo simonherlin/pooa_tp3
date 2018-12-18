@@ -1,26 +1,25 @@
 package drawing.handlers;
-import java.util.List;
-import drawing.shapes.IShape;
-import drawing.shapes.ShapeGroup;
+
+import drawing.commands.GroupCommand;
+import drawing.commands.ICommand;
 import drawing.ui.DrawingPane;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
+
 public class GroupButtonHandler implements EventHandler<ActionEvent> {
-    private DrawingPane dPane;
+
+    private DrawingPane pane;
+    private ICommand command;
 
     public GroupButtonHandler(DrawingPane drawingPane) {
-        this.dPane = drawingPane;
+        this.pane = drawingPane;
     }
+
     @Override
     public void handle(ActionEvent event)
     {
-        List<IShape> selectedShapes = dPane.getSelection();
-        ShapeGroup group = new ShapeGroup();
-        group.addAllShapes(selectedShapes);
-
-        for(IShape s : group.getShapes())
-            dPane.removeShape(s);
-
-        dPane.addShape(group);
+        this.command = new GroupCommand(pane);
+        this.pane.getHistory().exec(command);
     }
+
 }
