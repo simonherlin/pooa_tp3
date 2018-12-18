@@ -139,4 +139,43 @@ public class PaintTest extends ApplicationTest {
         clickOn("Delete");
         assertTrue(app.getDrawingPane().getNumberShape() == 1);
     }
+
+    @Test
+    public void should_undo() {
+        // given:
+        clickOn("Rectangle");
+        moveBy(30,60).drag().dropBy(70,40);
+        clickOn("Circle");
+        moveBy(-30,160).drag().dropBy(70,40);
+
+        // when:
+        clickOn("Undo");
+        clickOn("Undo");
+
+        // then:
+        Iterator it = app.getDrawingPane().getChildren().iterator();
+        assertTrue(it.next() instanceof Rectangle);
+        assertFalse(it.hasNext());
+    }
+
+    @Test
+    public void should_redo() {
+        // given:
+        clickOn("Rectangle");
+        moveBy(30,60).drag().dropBy(70,40);
+        clickOn("Circle");
+        moveBy(-30,160).drag().dropBy(70,40);
+
+        // when:
+        clickOn("Undo");
+        clickOn("Undo");
+        clickOn("Redo");
+
+        // then:
+        Iterator it = app.getDrawingPane().getChildren().iterator();
+        assertTrue(it.next() instanceof Rectangle);
+        assertTrue(it.next() instanceof Ellipse);
+        assertFalse(it.hasNext());
+    }
+
 }
