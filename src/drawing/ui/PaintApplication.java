@@ -11,7 +11,7 @@ import javafx.stage.Stage;
  */
 public class PaintApplication extends Application {
 
-    public static final int WIDTH = 800;
+    public static final int WIDTH = 970;
     public static final int HEIGHT = 600;
 
     private Scene scene;
